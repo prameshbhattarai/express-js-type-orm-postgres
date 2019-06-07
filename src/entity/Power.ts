@@ -8,7 +8,7 @@ export class Power {
     public id: number;
 
     @Column()
-    public power: string;
+    public ability: string;
 
     @ManyToOne(() => SuperHero, (superHero) => superHero.power)
     public superHero: SuperHero;

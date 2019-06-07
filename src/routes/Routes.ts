@@ -22,6 +22,11 @@ class Routes {
             .get(this.controller.getAllSuperHero)
             .post(this.controller.addSuperHero);
 
+        app.route('/superHero/:superHeroId')
+            .get(this.controller.getSuperHeroById)
+            .put(this.controller.updateSuperHero)
+            .delete(this.controller.deleteSuperHero);
+
     }
 }
 
