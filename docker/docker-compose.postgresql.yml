@@ -4,7 +4,7 @@ services:
     image: "postgres:11"
     container_name: "my_postgres"
     ports:
-      - "54320:5432"
+      - "5432:5432"
     volumes:
       - my_dbdata:/var/lib/postgresql/data
 volumes:
